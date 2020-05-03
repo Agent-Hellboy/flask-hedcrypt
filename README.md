@@ -2,7 +2,7 @@
 
       
       
-      A flask extension which provide interface(API) to cryptography library of python.  
+      A flask extension which provide interface(using a set of APIs) to cryptography library of python.  
       
       
       
