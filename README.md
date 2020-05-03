@@ -42,7 +42,7 @@ pip3 install -r requirements.txt
 ---------
 
 - [ ] write configuration parameter for the extension.
-- [ ] file encryption and decryption support using asymmetric key encryption
+- [ ] file encryption and decryption support using symmetric key encryption
 - [ ] API for PGP(preety good privacy)
 - [ ] coming up with the use case for API support to use asymmetric key encryptio
 
