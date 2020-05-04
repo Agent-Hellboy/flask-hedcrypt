@@ -25,15 +25,16 @@ pip3 install -r requirements.txt
  
  <br>
  For now
+
  ```
- from flask import Flask
- app=Flask(__name__)
- 
- crpt=Crypto(app)
- #api to calculate key using PKCS7
- key=crpt.key_derive(b'data')
- #api to verify the key 
- crpt.key_verify(b'data', key)
+       from flask import Flask
+       app=Flask(__name__)
+
+       crpt=Crypto(app)
+       #api to calculate key using PKCS7
+       key=crpt.key_derive(b'data')
+       #api to verify the key 
+       crpt.key_verify(b'data', key)
  
  ```
  
@@ -45,6 +46,7 @@ pip3 install -r requirements.txt
 - [ ] file encryption and decryption support using symmetric key encryption
 - [ ] API for PGP(preety good privacy)
 - [ ] coming up with the use case for API support to use asymmetric key encryptio
+
 
 **Contributing**
 ----------------
