@@ -12,8 +12,8 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.backends import default_backend
 
 
-
 SALT = os.urandom(16)
+
 
 class Crypto:
     """
@@ -22,6 +22,7 @@ class Crypto:
     We need to pass a hashing function that will be used as the HMAC, 
     number of iterations to mitigate brute-force attack, and a salt for rainbow tables.
     """
+
     @staticmethod
     def _setup():
         kdf = PBKDF2HMAC(
@@ -42,19 +43,12 @@ class Crypto:
         app.app_context()
 
     def key_derive(self, name):
-    """
-    Returns key of length 32 as I have used length of 32, however you can tune it. 
-    you can get redable format of key by encoding it in base64
-    import base64
-    base64_key=base64.b64encode(key)
-    """
+        # Returns key of length 32 as I have used length of 32, however you can tune it.
         kdf = Crypto._setup()
         key = kdf.derive(name)
         return key
 
-    def key_verify(self, password, l_key):  
-    	"""
-    	Return None if password is verified else generate an EXCEPTION InvalidKey. 
-    	"""      
+    def key_verify(self, password, l_key):
+        # Return None if password is verified else generate an EXCEPTION InvalidKey.
         kdf = Crypto._setup()
         return kdf.verify(password, l_key)
