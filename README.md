@@ -75,7 +75,7 @@ pip3 install -r requirements.txt
 - [ ] coming up with the use case for API support to use asymmetric key encryption
 - [ ] write UnitTest for file encryption and decryption
 - [ ] Writing deceroter class for flask-sqlalchemy model class.
-- [ ] Store Derived Key in metadata of the every file uploaded (For now PDF files). 
+- [x] Store Derived Key in metadata of the every file uploaded (For now PDF files). 
 
 **Contributing**
 ----------------
