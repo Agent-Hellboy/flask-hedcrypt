@@ -2,6 +2,8 @@
 flask_cypto.py 
 Contains Crypto class which derive and verify key in accordance with PKCS7. 
 """
+
+
 import os
 import base64
 
@@ -51,4 +53,4 @@ class Crypto:
     def key_verify(self, password, l_key):
         # Return None if password is verified else generate an EXCEPTION InvalidKey.
         kdf = Crypto._setup()
-        return kdf.verify(password, l_key)
+        return kdf.verify(password, l_key())
