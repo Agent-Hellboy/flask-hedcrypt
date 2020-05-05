@@ -79,6 +79,10 @@ pip3 install -r requirements.txt
 
 **Contributing**
 ----------------
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Welcome You all to improve this extension. 
+<br>
+Please suggest some use cases.
+<br>
+Open to accept any harse reality about this extension.
 
 
