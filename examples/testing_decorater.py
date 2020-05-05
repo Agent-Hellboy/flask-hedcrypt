@@ -27,10 +27,10 @@ def encryptor(cls):
 class Encryptor:
     def __call__(self, cls):
         class Inner(cls):
-            crypt=Crypto(app)
-            var=crypt.key_derive(cls.ssid)
-            #print(print(cls.ssid))
-            setattr(cls,'password',var) 
+            crypt = Crypto(app)
+            var = crypt.key_derive(cls.ssid)
+            # print(print(cls.ssid))
+            setattr(cls, "password", var)
 
         return Inner
 

@@ -43,26 +43,28 @@ pip3 install -r requirements.txt
 
  Key Derivation and Verification APIs
  ```
-       from flask import Flask
-       app=Flask(__name__)
-       from flask_crypto.flask_crypto import Crypto
-       crpt=Crypto(app)
-       #api to calculate key using PKCS7
-       key=crpt.key_derive(b'data')
-       #api to verify the key 
-       crpt.key_verify(b'data', key)
+	from flask import Flask
+
+	app = Flask(__name__)
+	from flask_crypto.flask_crypto import Crypto
+
+	crpt = Crypto(app)
+
+	key = crpt.key_derive(b"data")  # api to calculate key using PKCS7
+
+	crpt.key_verify(b"data", key)  # api to verify the key
  
  ```
  File Encryption and Decryption APIs (currently only text,pdf ,...) 
 
  ```
-      from flask_crypto.file_encryt_decrypt import FileEncryptDecrypt
-      file_ecd=FileEncryptDecrypt(key)
-      #api to encrypt file
-      file_edc.encrypt_file(file/path/to/encrypt)
-      #api to decrypt file
-      file_edc.encrypt_file(file/path/to/decrypt)
+	from flask_crypto.file_encryt_decrypt import FileEncryptDecrypt
 
+	file_ecd = FileEncryptDecrypt(key)
+
+	file_edc.encrypt_file(file / path / to / encrypt)  # api to encrypt file
+
+	file_edc.encrypt_file(file / path / to / decrypt)  # api to decrypt file
  ```
  
     

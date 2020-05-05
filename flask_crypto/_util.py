@@ -1,7 +1,8 @@
 """
 This module provide the APIs to insert the key inside the pdf file and to extract key from pdf.
-Key should be the derived key using PKCS7 
+Key should be the derived key using PKCS7 which is implemented in Crypto class of flask_crypto module
 """
+
 
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
