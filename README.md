@@ -29,7 +29,14 @@ pip3 install -r requirements.txt
  Currently under developement <br>
  Welcoming you all to contribute in any possible way.
  Please have a look at the todo.  
+
  
+	    git clone https://github.com/princekrroshan01/flask-hedcrypt/
+	    cd flask-hedcrypt
+	    virtualenv venv
+	    source venv/bin/activate
+	    pip install -r requirements.txt
+
  <br>
  For now
 
