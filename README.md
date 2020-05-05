@@ -1,18 +1,18 @@
 # flask-hedcrypt
      
       
-      A flask extension which provide interface(using a set of APIs) to cryptography library of python.  
+      A flask extension which provide interface to some cryptographic use cases.  
       
       
       
 **features**
 -----------
 
-1  Key Derivation in accordance with PKCS7.
-2  The derived key is used as a password. 
-3  Derived Key is always inserted in every file you upload onto the server into the metadata of file(currently only pdf encryption is test manualy)
-4  No one is ever able to see the document except you as the file is stored as an encrypted file onto the server.
-5  You can use the APIs like key_derive and key_verify for password. But you also had an option to decerote the Model class in future for that you  	had to provide ssid and username into the model so that a key is derived from it (use this method if you want to use more funtionality of the 	extension).
+*  Key Derivation in accordance with PKCS7.
+*  The derived key is used as a password. 
+*  Derived Key is always inserted in every file you upload onto the server into the metadata of file(currently only pdf encryption is test manualy)
+*  No one is ever able to see the document except you as the file is stored as an encrypted file onto the server.
+*  You can use the APIs like key_derive and key_verify for password. But you also had an option to decerote the Model class in future for that you  	had to provide ssid and username into the model so that a key is derived from it (use this method if you want to use more funtionality of the 	extension).
 
 
 **Prerequisites**
