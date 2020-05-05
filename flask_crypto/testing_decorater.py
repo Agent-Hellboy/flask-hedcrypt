@@ -27,7 +27,8 @@ def encryptor(cls):
 class Encryptor:
     def __call__(self, cls):
         class Inner(cls):
-            cls.password = cls.ssid[::-1]
+            print(print(cls.ssid))
+            cls.ssid = cls.ssid[::-1]
 
         return Inner
 
