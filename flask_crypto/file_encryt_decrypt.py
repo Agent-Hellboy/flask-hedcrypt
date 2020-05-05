@@ -8,14 +8,14 @@ class FileEncryptDecrypt:
     class which provide APIs for file encryption and decryption.
     """
 
-
     def __init__(self, key):
         self.key = key
-        if not isinstance(self.key,bytes):
-        	self.key = key.encode('utf-8')  
-        	
+        if not isinstance(self.key, bytes):
+            self.key = key.encode("utf-8")
+
         print(self.key)
-    def encrypt_file(self,in_filename, out_filename=None, chunksize=64 * 1024):
+
+    def encrypt_file(self, in_filename, out_filename=None, chunksize=64 * 1024):
         # used to encrypt the file
         l = in_filename.split(".")
         if not out_filename:
@@ -43,7 +43,7 @@ class FileEncryptDecrypt:
 
                     outfile.write(encryptor.encrypt(chunk))
 
-    def decrypt_file(self,in_filename, out_filename=None, chunksize=24 * 1024):
+    def decrypt_file(self, in_filename, out_filename=None, chunksize=24 * 1024):
         """ Decrypts a file using AES (CBC mode) with the
             given key. Parameters are similar to encrypt_file,
             with one difference: out_filename, if not supplied
@@ -67,5 +67,3 @@ class FileEncryptDecrypt:
                     outfile.write(decryptor.decrypt(chunk))
 
                 outfile.truncate(origsize)
-
-
