@@ -10,9 +10,9 @@
 
 *  Key Derivation in accordance with PKCS7.
 *  The derived key is used as a password. 
-*  Derived Key is always inserted in every file you upload onto the server into the metadata of file(currently only pdf encryption is test manualy)
-*  No one is ever able to see the document except you as the file is stored as an encrypted file onto the server.
-*  You can use the APIs like key_derive and key_verify for password. But you also had an option to decerote the Model class in future for that you  	had to provide ssid and username into the model so that a key is derived from it (use this method if you want to use more funtionality of the 	extension).
+*  Derived Key is always inserted in every file you upload onto the server into the metadata of file(currently only pdf encryption is tested manualy)
+*  No one is ever able to see the files (e.g documents) except you as the file is stored as an encrypted file onto the server.
+*  You can use the APIs like key_derive and key_verify for password. But you also had an option to decerote the Model class in future for that you  had to provide ssid and username into the model so that a key is derived from it (use this method if you want to use more funtionality of the extension).
 
 
 **Prerequisites**
@@ -74,7 +74,7 @@ pip3 install -r requirements.txt
 - [ ] coming up with the use case for API support to use asymmetric key encryption
 - [ ] write UnitTest for file encryption and decryption
 - [ ] Writing deceroter class for flask-sqlalchemy model class.
-
+- [ ] Store Derived Key in metadata of the every file uploaded (For now PDF files). 
 
 **Contributing**
 ----------------
