@@ -1,7 +1,7 @@
 # flask-hedcrypt
      
       
-      A flask extension which provide interface(using a set of APIs) to cryptography library of python.  
+      A flask extension which provide interface to some cryptographic use cases.  
       
       
       
