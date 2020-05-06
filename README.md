@@ -6,8 +6,8 @@
 ## General info
 
 * If None of the use cases are found in future then the flask-name may be removed 
-  from repo.As currently their is only one use case i.e. decorating the call 
-  inherited from db.Model class of sqlalchmey.
+  from repo.As currently their is only one use case i.e. decorating the class 
+  inherited from db.Model class of flask-sqlalchmey.
 
 * I want to decorate the class inherited from db.Model so that instead of 
    calculating the hash seperately using an API and then storing it into 
