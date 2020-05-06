@@ -44,10 +44,9 @@ pip3 install -r requirements.txt
  Key Derivation and Verification APIs
  ```
 	from flask import Flask
-
-	app = Flask(__name__)
 	from flask_crypto.flask_crypto import Crypto
-
+	
+	app = Flask(__name__)
 	crpt = Crypto(app)
 
 	key = crpt.key_derive(b"data")  # api to calculate key using PKCS7
