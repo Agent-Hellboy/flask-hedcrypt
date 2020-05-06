@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_crypto import Crypto
+from flask_crypto.flask_crypto import Crypto
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -9,9 +9,6 @@ db = SQLAlchemy(app)
 
 from sqlalchemy.ext.declarative import declared_attr
 
-
-class PasswordMixin:
-    pass
 
 
 def encryptor(cls):
@@ -27,12 +24,14 @@ def encryptor(cls):
 class Encryptor:
     def __call__(self, cls):
         class Inner(cls):
-            crypt = Crypto(app)
-            var = crypt.key_derive(cls.ssid)
+	    # just make sure of manupulation of an attribute from User5 class that's it.
             # print(print(cls.ssid))
+	    var = cls.ssid[::-1]
             setattr(cls, "password", var)
 
         return Inner
+
+
 
 
 @Encryptor()
