@@ -80,12 +80,14 @@ pip3 install -r requirements.txt
 ---------
 
 - [ ] write configuration parameters for the extension.
-- [x] file encryption and decryption support using symmetric key encryption
-- [ ] API for PGP(preety good privacy)
-- [ ] coming up with the use case for API support to use asymmetric key encryption
-- [ ] write UnitTest for file encryption and decryption
+- [x] file encryption and decryption support using symmetric key encryption.
+- [ ] API for PGP(preety good privacy).
+- [ ] coming up with the use case for API support to use asymmetric key encryption.
+- [ ] write UnitTest for file encryption and decryptio.
 - [ ] Writing deceroter class for flask-sqlalchemy model class.
-- [x] Store Derived Key in metadata of every file uploaded (For now PDF files). 
+- [x] Store Derived Key in metadata of file (For now PDF files). 
+- [ ] Use pytest to write tests for the package.
+
 
 **Contributing**
 ----------------
