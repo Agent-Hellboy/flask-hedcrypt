@@ -3,7 +3,11 @@
       
   	A flask extension which provide interface( set of APIs) having implemenation of some of the use cases of cryptography.  
       
-      
+## General info
+
+	If None of the use cases are found in future then the flask-name may be removed from repo.As their is only one use case 	of decorating the call inherited from db.Model class of sqlalchmey.
+	
+	I want to decorate the class inherited from db.Model so that insted of calculating the hash seperately using an API and 	then storing it into the database. user has an option to decorate the class and wrapper code will calculate the derived 	key from ssid and username and store it as a new field name derived key.   
       
 **features**
 -----------
