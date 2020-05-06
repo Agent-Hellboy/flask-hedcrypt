@@ -5,8 +5,8 @@
       
 ## General info
 
-* If None of the use cases are found in future then the flask-name may be removed 
-  from repo.As currently their is only one use case i.e. decorating the class 
+* If None of the use cases are found in future then the flask name may be removed 
+  from repo.As currently their is only one use case related to flask i.e. decorating the class 
   inherited from db.Model class of flask-sqlalchmey.
 
 * I want to decorate the class inherited from db.Model so that instead of 
