@@ -20,7 +20,7 @@ SALT = os.urandom(16)
 class Crypto:
     """
     Class that provide APIs which acts as an interface to the cryptography library of python. 
-    You can tune these parameters.
+    You can tune the parameters in _setup function.
     We need to pass a hashing function that will be used as the HMAC, 
     number of iterations to mitigate brute-force attack, and a salt for rainbow tables.
     """
@@ -48,9 +48,28 @@ class Crypto:
         # Returns key of length 32 as I have used length of 32, however you can tune it.
         kdf = Crypto._setup()
         key = kdf.derive(name)
+        key = base64.b64encode(key)
         return key
 
     def key_verify(self, password, l_key):
         # Return None if password is verified else generate an EXCEPTION InvalidKey.
         kdf = Crypto._setup()
-        return kdf.verify(password, l_key())
+        return kdf.verify(password, base64.b64decode(l_key))
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
