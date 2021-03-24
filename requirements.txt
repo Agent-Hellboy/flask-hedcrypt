@@ -11,5 +11,5 @@ memory-profiler==0.57.0
 protobuf==3.11.3
 psutil==5.7.0
 PyPDF2==1.26.0
-rsa==4.0
+rsa==4.1
 uritemplate==3.0.1
